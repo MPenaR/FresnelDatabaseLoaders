@@ -14,7 +14,7 @@ The python loader returns two 'numpy.NDarray'  objects containing the incident f
 
 ## References
 
-- Belkebir H, Saillard M 2001 Special section: Testing inversion algorithms against experimental data Inverse problems 17 1565-1571 
+1. Belkebir H., Saillard M. 2001 Special section: Testing inversion algorithms against experimental data. _Inverse problems_ 17 1565-1571 
 
 
 
