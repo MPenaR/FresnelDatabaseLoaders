@@ -8,7 +8,7 @@ In [1] all the signals are assumed to have time-harmonic dependency, i.e. $u(\ma
 
 ## Python
 
-The python loader returns two 'numpy.NDarray'  objects containing the incident field and the scattered field per each batch of experiments.
+The python loader returns two `numpy.NDarray`  objects containing the incident field and the scattered field per each batch of experiments.
 
 
 
