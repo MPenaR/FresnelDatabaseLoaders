@@ -11,6 +11,10 @@ In [1] all the signals are assumed to have time-harmonic dependency, i.e. $u(\ma
 The python loader returns two `numpy.NDarray`  objects containing the incident field and the scattered field per each batch of experiments.
 
 
+## MATLAB
+
+### GNU-Octave
+All the MATLAB code is also valid for octave, with the exception that octave has no implementation of a `pdist2`function.
 
 ## References
 
