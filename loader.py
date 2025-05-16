@@ -1,10 +1,11 @@
 import numpy as np 
 from pathlib import Path
 from enum import Enum
-#from collections import namedtuple
+from numpy.typing import NDArray
 
 
-
+float_array = NDArray[np.float64]
+complex_array = NDArray[np.complex128]
 
 # list of original filenames
 class FresnelFile(Enum):
@@ -35,8 +36,19 @@ N_R = 72
 def load_file( filename : FresnelFile | str, folder = Path('./Data'), 
               positive_exponent = True, 
               zero_completed = True,
-              verbose = False):
+              verbose = False) -> tuple[complex_array, complex_array, float_array]:
     """
+    Reads a file from the two dimensional Fresnel database and returns 3 numpy arrays
+    containing the incident field, the scattered field and the set of frequencies.
+
+    Inputs:
+        - filename : 
+        - folder : 
+        - positive_exponent: If True the time dependent signal for amplitude U(x) is:
+            u(x,t) = Re[ U(x) exp(iwt) ]
+        - zero_completed: if True the far field data contains zeros where data is missing.
+        - verbose: if True the name of the file being loaded is printed
+        - output: if present the three arrays are saved at "outoput".npz
     """
 
     if isinstance(filename,str):
