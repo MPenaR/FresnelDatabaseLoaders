@@ -2,6 +2,12 @@ Data/*
 
 fit_incident.m
 
+#fortran 
+*.o 
+*.mod
+
+
+
 #Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
